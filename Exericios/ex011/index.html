@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Testando esse site em varios tamanhos diferentes</p>
+        <picture> <!-- normalmente ele pede "min-width", porem podemos coloca como max-width"-->
+                    <!--Sourcer media:type-->
+ <!--ordem 1--><source media="(max-width: 750px)" srcset="imagens/imgp.png" type="image/png">
+<!--ordem 2--> <source media="(max-width: 1050px)" srcset="imagens/imgm.png" type="image/png">
+<!--imagem padrão--><img src="imagens/imgg.png" alt="imagem grande">
+        </picture>
+    <!-- o (max-width:"xxxpx") significa que, quando a imagem do img (src="") superar o quantidade-->
+    <!-- maxima de pixels, a imagem do srcset="" ira substituir, pra uma imagem menor -->
+    <!-- o width e lateral, então ser tiver menos de 1050px laterais, vai carrega a imgm.png, porem se 
+        tiver menos de 750px laterais ira carregar a imgp.png-->
+    <!-- isso e ajustado dependendo dos px laterais da sua img, então é bom voce ver quantos px sua(s) img tem-->
+    <!-- dica: envolpe a tag/frase e use alt+setas pra mover o mesmo pra linha que você quiser-->
+
+    <h1>Reproduzindo áudio</h1>
+        <p>vamos aprender, a reproduzir audio no site no HTML 5</p>
+    <!-- Parâmentros: "controls" é pra aparece um controle de audio, e "autoplay" é tocar ao entrar no site-->
+    <audio src="midia/Sprite Star - Saidbysed.mp3" controls></audio>
+        <h2>Também temos outra forma de desenvolver nossos áudio no nosso site</h2>
+        <audio preload="metadata" controls>
+            <source src="midia/in3godmode.mp3" type="audio/mpeg"> <!-- eles carregam e ordem-->
+            <source src="midia/in3godmode.ogg" type="audio/ogg">  <!-- de cima para baixo   -->
+            <source src="midia/in3godmode.wav" type="audio/wav">  <!-- ser o audio nao carregar, o "P" aparece-->
+            <p>infelizmente o navegador não foi capaz de carrega o áudio, mas poderar ouvir clicando
+                <a href="https://studio.youtube.com/channel/UCeOUlJHAk6B6ahoeDRFcyfQ/music">aqui</a></p>
+        </audio>
+<!-- existem 3 prelord, sendo o "auto" o padrão, o site so vai termina d'carregar depois que todo o áudio 
+    carregar tambêm, o metadata, so carrega as informações basica dos audio, e none não carrega nada
+    ate o usuário clicar no audio, assim como metadata-->
+</body>
+</html>

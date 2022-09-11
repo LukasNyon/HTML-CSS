@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonte em CSS</title>
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 16px; /* podemos coloca tbm 0.5in/em 50% de uma polegada/padrão */
+            font-weight: 670; /* peso */ /* light normal bord bolder */ /* utiliza-se para negrita ou suavizar a letra */
+            font-style: italic; /* style de fonte */
+            text-decoration: underline;
+
+        }
+        /* 
+        (weiht;peso) (width;larguta) (height;altura)
+        medidas absolutas (recomendação da W3C é o uso do "px")
+        cm, mm, px, in (polegada), pt, pc (pyka)
+        in: 2,54cm  pt:ponto ( pt normalmente e usado pra papeis fisico, na internet e bom usar px)
+        tamanho normal da fonte é: 16px
+
+        medidas relativas (recomedação da W3C é o uso do "em")
+        em, ex (altura x de um fonte), rem, vw (altura do viewport), vh (largura do viewport)
+        em: 1em é o tamanho normal padrão da letra ou aprox 16px ( podemos colocar tbm 0.5em que são 50% de 1em/8px)
+        */
+
+        h1, h2 {
+          /* font-family: 'work sans', sans-serif;
+            font-size: 2em;
+            font-weight: 700;
+            font-style: italic;
+                        <propriedade shorthand -> atalhos que você coloca coisas de varias linhas, e uma só.>
+            possui um atalho numa ordem, onde podemos coloca essas 4 linhas apenas em uma fonte 
+           nessa ordem: style > size > weight > family */
+            font:italic bolder 2em 'work sans', sans-serif 
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fonte</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas veniam magnam sint aperiam ea ullam quibusdam nihil excepturi a accusantium odit fugit ipsum voluptates, consectetur fuga quidem. Officia, magni maiores.</p>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam expedita nobis ullam, in provident amet saepe autem nesciunt culpa, eaque eligendi sapiente adipisci ratione aspernatur incidunt vero. Nihil, vero.</P>
+        <h2>Substituto do Exercicio</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam nulla nobis harum, possimus ipsa mollitia dolor ad? Repellat, ratione cum qui voluptatum itaque architecto vitae ut fugit esse, illo repudiandae?</p>
+        
+</body>
+</html>

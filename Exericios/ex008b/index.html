@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatações </title>
+</head>
+<body>
+    <h1>outras formatações</h1>
+        <h2>código-fonte / pré-Formatação</h2>
+            <p>O comando <code>document.getElementById('teste')</code> é escrito
+                em linguagem JavaScript.
+            </p>
+<pre>
+<code>     <!-- o "Pre" considera espaçamento dando uma "cara a mais de codigo" do que apenas colocando o "code"-->
+num = int(input('Digite um numero'))       <!-- envelopa todo a tag "pre" clica SHift+tab, pra diminuir o espamento da parede com o code -->
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do Programa')
+</code>
+</pre>
+        <h2>agora, sem o shift+tab</h2>
+            <pre>
+                <code>
+                    num = int(input('Digite um numero'))
+                    if num % 2 == 0:
+                        print(f'O número {num} é PAR')
+                    else:
+                        print(f'O número {num} é ÍMPAR')
+                    print('Fim do Programa')
+                </code>
+            </pre>              <!-- para fazer a tag toda ir pro lado direito, e so envelopar toda tag e pressionar TAB-->
+            <h2>citações simples</h2>
+            <p>como diria o pai de um amigo: <Q>o computador e um burro muito rápido</Q></p>
+            <h2>citações completas</h2> <!-- possue uma quebra de linha e um deslocamento horizontal pra direita-->
+            <p>ja dizia arístoteles a persuassão de um orador</p>
+<blockquote>
+    "O caráter pessoal do orador alcança a persuasão quando ele nos leva a crer no discurso proferido. 
+    Acreditamos mais nos homens de bem por serem mais preparados e íntegros do que outros. 
+    Em geral, isso é verdadeiro, qualquer que seja a questão
+    e absolutamente verdadeiro onde a certeza exata é impossível e as opiniões são divididas."
+</blockquote>
+            <p>outra informação tambêm</p>
+            <!-- alem disso, podemos "citar" o link ou o lugar da onde essa citação veio, colocando URL, nomes, sites, etc... ex:-->
+<blockquote cite="https://www.pensador.com/aristoteles_frases_sobre_etica/">
+    "A virtude moral é uma consequência do habito. 
+    Nós nos tornamos os que fazemos repetidamente. 
+    Ou seja: nós nos tornamos justos ao praticarmos atos justos, controlados ao praticarmos atos de autocontrole
+    corajosos ao praticarmos atos de bravura."
+</blockquote>
+            <h2>Abreviações</h2>
+                <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+            <h2>Texto Invertido</h2>
+                <p><bdo dir="rtl">A Mãe do Gabriel e um Nucleo De Hidrogênio massivo</bdo></p>
+            <!-- "rtl" pra inverter, e ltr pra fica normal-->
+            <p><bdo dir="ltr">Eu respeito a mão dos meus amigos</bdo></p>
+</body>
+</html>

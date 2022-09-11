@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com links </title>
+</head>
+<body>
+    <h1>Usando links externos </h1> <!-- "href" sig: referência de hypertexto-->
+        <p>o Arquivo em PDF sobre o assunto estar <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf">Aqui</a></p> 
+        <!-- a Tag "a" sig: âncora-->
+        <h2>porêm e recomendado que utilizamo a tag dessa forma, pra que fica acessível ao dono do site.</h2>
+            <p>pois a tag "a" sem o "target" sobrepõe o site atual, tirando o cliente do site.</p>
+            <p>porem o target abre uma nova guia, mantendo o site aberto e provavalmente o cliente tambêm</p>
+            <p>então normalmente, quando você colocando um link de um site que não te pertece, e bom coloca esses paramêntro, mas ser o link for do seu site, então n precisa</p>
+            <p>o link exemplo pode ser acessado <a href="https://betteranime.net/" target="_blank" rel="external">AQUI</a> site do better animes</p>
+            <!-- o "target="_blank" é pra que o link abra uma nova guia, target sig: alvo, que seria o _blank -->
+            <!-- e o rel="external" significa que ele e do tipo externo, que vai pra fora do site.-->
+            <!-- podemos adicionar tambêm o paramêntro hreflang="" você fala qual a linguagem padrão o site do link que você está colocando-->
+            <!-- target="_self" e a tag padrão da tag <a>, quando clica no link, ela abre 
+                na mesma guia-->
+            <!-- exemp: -->
+            <p>Um site de exemplar em inglês, <a href="https://awoiaf.westeros.org/index.php/Timeline_of_major_events" target="_blank" rel="external" hreflang="en">Aqui</a></p>
+    <h1>Usando link interno</h1>
+            <p>está e a primeira pagina do site, porêm ser você quiser, pode acessar a outra aba
+                que tem mais informações, <a href="pag002.html" rel="next">Aqui!</a>
+            </p> <!-- "next" signica proxima aba de busca-->    
+    <h1>Links para download</h1>
+            <ul> <!-- enquanto ainda nao coloca o link, podemos coloca "#" para preencher, pois ele e um link vazio-->
+                <li><a href="livro/mitologia.pdf" download="mitologia.pdf" type="application/pdf">link para baixar em PDF</a></li>
+                <li><a href="livro/MitologiaNordica_ - Copia.rar" download="MitologiaNordica_ - Copia.rar" type="application/rar">Link para baixar compactado rar</a></li>
+                <!-- "https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" pra ver alguns-->
+                <!-- types alem desses.-->
+                <li>testando o<a href="video/www.KeepVid.to---ZENITSU TWIXTOR FREE PACK.mp4" download="www.KeepVid.to---ZENITSU TWIXTOR FREE PACK.mp4" type="video/mp4" target="_blank" rel="external"> download de video</a></li>
+                <!-- quando o arquivo nao quer baixar, as vezes necessita acrescentar o comando taget="_blank"-->
+                <a href="livro/mitologia.pdf" target="_blank" rel="external">link para baixar em PDF em guia exterior</a></li>
+            </ul>
+</body>
+</html>

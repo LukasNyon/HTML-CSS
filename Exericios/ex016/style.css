@@ -1,0 +1,34 @@
+@charset "UTF-8"; /* para nao ter problema com caracteres especiais */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: radial-gradient(blue, #cf56f798 );
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    box-shadow: 10px 10px 5px rgba(102, 102, 255, 0.459) ; /* pro lado, pra baixo, densidade e dps a cor */
+    padding: 10px; /* o espaçamento da letra ate a margem */
+    margin: auto; /* centralizaçaõ do texto ou da tag no meio do site */
+    border-radius: 15px; /* as bordinhas */
+    height: auto;
+}  
+
+h1 {
+    color: #F5B72C;
+    text-align: center;
+    text-shadow: 1px 1px 2px #c79323b0;
+}
+
+h2 {
+    color: #2CF5A2;
+}
+
+p {
+    text-align: justify;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.521);
+}

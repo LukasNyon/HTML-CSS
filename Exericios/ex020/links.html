@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=DynaPuff&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Shadows+Into+Light&family=Work+Sans:ital,wght@1,300&display=swap');
+
+        /*
+        . = class
+        # = id
+        : = pseudo class
+        ::= pseudo element
+        > = childen ( filho )
+        */
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a {
+            color: darkred;
+            text-decoration: none; /* tira o sublinhamentos das palavras */ 
+            font-weight: bolder;           
+        }
+
+        a:visited {
+            color: darkviolet;
+        }
+
+        a:hover {
+            text-decoration: underline; /* quando eu passo o mouse emcima, ele fica sublinhado */
+            color: yellow;
+        }
+                    /* Pseudo-elemento */
+
+        .Javi {
+            background-color: rgba(135, 207, 235, 0.788);
+        }
+
+        .Javi::before {
+            content: '--> '; /* conteúdo */
+        
+        }
+
+        .Javi::after {              /* depois */
+            content: ' <--';
+            
+        } 
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.fragrantica.com.br/perfume/Paco-Rabanne/Phantom-68226.html">Link 1</a></li>
+        <li><a href="https://lolalytics.com/" class="Javi">Link 2</a></li>
+        <li><a href="https://lolalytics.com/lol/tierlist/" class="Javi">Link 3</a></li>
+    </ul>
+</body>
+</html>

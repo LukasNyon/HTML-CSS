@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* em HTML é ID= em CSS e #;
+/* tudo em HTML que é class= em CSS é .; */
+
+body {
+    background-color: lightslategray;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: lightskyblue;
+}
+
+#principal {    /* pode ser tanto "h1#principal" quanto "#principal", nao pode ter espaço ex: "# principal" */
+    text-align: center;
+    background-color: #622c779d;
+    color: white;
+    text-shadow: 1px 1px 1px #0c040fee;
+}
+
+h2 {
+    color: rgb(213, 239, 255);
+}
+
+.basico {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.intermediario {        
+    font-size: large;
+    font-weight: bolder;
+}
+
+.avanzed {
+    font-size: normal;
+    font-weight: bold;
+}
+
+.destaque {
+    font-weight: 900;
+}

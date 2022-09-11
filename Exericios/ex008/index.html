@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatação de textos</title> <!-- o uso do "mark Style" na tag "head" e pra modificar a cor de todas as marcações, pois de padrão e amarelo.-->
+    <style>
+        mark {                      
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>principais formatações</h1>
+        <h2>negrito / destaque</h2>
+        <p>Nessa frase temos <b>temos em negrito</b> usando a tag B( não semantica )</p>
+        <p>porem, Nessa frase temos <strong>uma frase em destaque</strong> usando o termo STRONG. ( semântica ).</p>
+        <h2>Itálico / Ênfase</h2>
+        <p>agora temos um <I>termo em italico</I>,utlizando a tag I  ( nao sêmantica )</p>
+        <!-- ou podemos selecionar a palavra que queremos
+        usar SHIFT+P, logo apos ">abb" escolher a tag
+        e da enter-->
+        <p>também temos outra forma de da <em>ênfase as frase</em>, utilizando a tag EM ( sêmantica. )</p>
+        <h2>Texto marcado</h2>
+        <p>podemos criar tambêm um <mark>texto marcado</mark> usando a TAG mark (semantica).</p>
+        <p>tambêm podemos mudar <mark style="background-color: rgba(42, 71, 236, 0.959);">a cor da marcação abrindo um parâmentro style</mark> ( não semantica ).</p>
+        <h2>Texto grande e pequeno</h2>
+        <p>estamos criando um <big>texto grande</big>, e um <small>texto pequeno</small> nesse parágrafo</p> <!-- Big e uma tag absoleta, porem small ainda não. -->
+        <h2>texto deletado</h2>
+        <p>podemos marca um <del>texto que foi excluído </del>para indicar que ele deve ser lido, mas não considerado</p>
+        <h2>texto inserido</h2>
+        <p>podemos marca um <ins>texto como inserido</ins>, para da enfâse e indicar que ele foi adicionado depois </p>
+        <h2>Texto Sobrescrio</h2>
+        <p>frases que normalmente tem palavras como x^20.y^3, colocando a tag x<sup>20</sup>.y<sup>3</sup> </p>
+        <h2>Texto Subscrito</h2>
+        <p>frases que normalmente tem palavras como H2O, colocando a tag H<sub>2</sub>O</p>
+    </body>
+</html>
