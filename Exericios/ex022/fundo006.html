@@ -7,13 +7,21 @@
     <title>Document</title>
     <style>
         body {
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
             height: 100vh;
+            /* background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-        
+            background-attachment: fixed; */ 
+            
+            /* vinculo entre a background e o conteudo */
+            
+            /* Shorthand - background
+             ordem : Color >  image > position > repeat > sizer > attachment */ /* ser o sizer não pega, poen o / antes */
+
+            background: black url(imagens/wallpaper002.jpg) center center /cover fixed;
         }
 
         main {
