@@ -15,17 +15,25 @@
             width: 300px;
             height: 150px;
             border-collapse: collapse; /* junta as bordas */
+            box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.404);
         }
 
         td {
             padding-left: 10px;        
             border: 1px solid black;
+
         }
 
         tr.main {
             height: 40px;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.671);
             color: white;
+            text-align: center;
+            
+        }
+
+        .subs {
+            vertical-align: middle; /* basicamente um text-align pra vertical.*/
         }
     </style>
 </head>
@@ -45,16 +53,16 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr>
+        <tr class="subs">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr>
+        <tr class="subs">
             <td>A3
             <td>B3
             <td>C3
-        <tr>
+        <tr class="subs">
             <td>A4
             <td>B4
             <td>C4
